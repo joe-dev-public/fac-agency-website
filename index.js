@@ -4,6 +4,6 @@
 
 function windowLoaded() {
 
-
+    console.log("Hello world.");
 
 }
