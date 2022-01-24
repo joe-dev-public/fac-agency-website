@@ -1,4 +1,27 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.member-container {
+  /* border: 5px solid #000; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.member {
+  width: 167px;
+  height: 223px;
+  background: #2d2e40;
+  border-radius: 25px 75px;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.member > span {
+  color: #fff;
 }
