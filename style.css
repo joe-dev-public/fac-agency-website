@@ -19,11 +19,169 @@ body {
   min-width: 23.438rem;
   display: grid;
   grid-template-columns: 1fr minmax(20.4375rem, 69.375rem) 1fr;
+  margin: 0;
 }
 
 main {
   grid-column: 2/3;
+  margin: 0 auto;
 }
+
+/* header and nav bar code start */
+header {
+  grid-column: 1/4;
+  background: url(/assets/header.svg), var(--orange-600);
+  color: var(--white-100);
+  height: 310px;
+  width: 100%;
+  border-radius: 0 0 0 10rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.nav-container {
+  max-width: 69.375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.nav-checkbox {
+  display: none;
+}
+
+.hamburger-lines-container {
+  z-index: 5;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  cursor: pointer;
+  right: 1rem;
+}
+
+.hamburger-line {
+  width: 2rem;
+  height: 0.26rem;
+  border-radius: 0.2rem;
+  margin: 2px;
+  background: var(--white-100);
+  transform-origin: center;
+  transition: 250ms ease-in-out;
+}
+
+.page-navigation {
+  position: absolute;
+  top: 5rem;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding: 4.8rem 2.4rem;
+  transform: scale(0, 0);
+  transform-origin: top;
+  transition: 250ms ease-in-out;
+  z-index: 5;
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.page-navigation > a:hover {
+  text-decoration: underline;
+}
+
+/* media query */
+@media screen and (min-width: 768px) {
+  .hamburger-lines-container,
+  .overlay {
+    display: none;
+  }
+  .page-navigation {
+    transform: scale(1, 1);
+    position: static;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row;
+    width: 20rem;
+    height: 2.7rem;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+.logo-container {
+  z-index: 5;
+}
+.overlay {
+  transform: scale(0, 0);
+  transform-origin: top;
+  transition: 250ms ease-in-out;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0rem;
+  left: 0;
+  z-index: 1;
+  background: var(--orange-600);
+  /* opacity: 0.5; */
+}
+
+.nav-checkbox:checked ~ .page-navigation {
+  transform: scale(1, 1);
+}
+
+.nav-checkbox:checked ~ .overlay {
+  transform: scale(1, 1);
+}
+
+.nav-checkbox:checked
+  ~ .hamburger-lines-container
+  > .hamburger-line-rotate-left {
+  /* // 1 */
+  transform: rotate(45deg) translate(11.8px, 6.9px);
+}
+
+.nav-checkbox:checked ~ .hamburger-lines-container > .hamburger-line-center {
+  /* //2 */
+  opacity: 0;
+  transform: scale(0, 0);
+}
+.nav-checkbox:checked
+  ~ .hamburger-lines-container
+  > .hamburger-line-rotate-right {
+  /* //3 */
+  transform: rotate(-45deg) translate(5.4px, -0.7px);
+}
+
+.header-hero-section {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-button {
+  background: var(--white-100);
+  color: var(--black-900);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  font-weight: bold;
+}
+
+.hero-button:hover {
+  background: var(--red-500);
+  color: var(--white-100);
+}
+
+/* header and nav bar code ends */
 
 /* from css-layout challenge-4 sensible layout */
 a {

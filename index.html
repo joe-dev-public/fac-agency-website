@@ -20,17 +20,36 @@
   </head>
 
   <body>
-    <header>
-      <nav class="row">
-        <a href="#">agency-name-logo</a>
-        <ul class="row">
-          <a href="#about-us"><li>About us</li></a>
-          <a href="#team-members"><li>Team members</li></a>
-          <a href="#contacts"><li>Contacts</li></a>
-        </ul>
-      </nav>
-      <h1>Agency name</h1>
+    <header class="nav-bar-header">
+      <div class="nav-container">
+        <div class="logo-container">
+          <a href="index.html">
+            <img src="assets/logo-white.svg" alt="HJ logo" />
+          </a>
+        </div>
+
+        <input type="checkbox" name="" id="nav-checkbox" class="nav-checkbox" />
+
+        <label for="nav-checkbox" class="hamburger-lines-container">
+          <div class="hamburger-line hamburger-line-rotate-left"></div>
+          <div class="hamburger-line hamburger-line-center"></div>
+          <div class="hamburger-line hamburger-line-rotate-right"></div>
+        </label>
+
+        <nav class="page-navigation">
+          <a href="#about-us" class="home-btn">about us</a>
+          <a href="#team-members" class="project-btn">the team</a>
+          <a href="#contacts">contact us</a>
+        </nav>
+        <div class="overlay"></div>
+      </div>
+
+      <div class="header-hero-section">
+        <h1>branding & web design agency</h1>
+        <a href="#contacts" class="hero-button">contact us</a>
+      </div>
     </header>
+
     <main>
       <section id="about-us">
         <span>about us</span>
