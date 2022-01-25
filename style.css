@@ -25,7 +25,6 @@ section {
   max-width: 60rem;
 }
 
-
 .member-container {
   /* border: 5px solid #000; */
   display: flex;
@@ -47,3 +46,4 @@ section {
 }
 .member > span {
   color: #fff;
+}
