@@ -3,6 +3,29 @@
   font-family: "Open Sans", sans-serif;
 }
 
+/* from css-layout challenge-4 sensible layout */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+/* this style is for test navigation, you can delete it */
+section {
+  border: 5px solid #000;
+  height: 100vh;
+  max-width: 60rem;
+}
+
+
 .member-container {
   /* border: 5px solid #000; */
   display: flex;
@@ -24,4 +47,3 @@
 }
 .member > span {
   color: #fff;
-}
