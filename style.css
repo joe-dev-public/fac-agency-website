@@ -19,6 +19,7 @@ body {
   min-width: 23.438rem;
   display: grid;
   grid-template-columns: 1fr minmax(20.4375rem, 69.375rem) 1fr;
+  grid-template-rows: 10fr 1fr;
 }
 
 main {
@@ -68,4 +69,23 @@ section {
 }
 .member > span {
   color: #fff;
+}
+
+footer {
+  grid-row: 2/3;
+  grid-column: 1/4;
+  background-color: #1d1c1e;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+footer > span {
+  width: 690px;
+  height: 1px;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.1;
 }
