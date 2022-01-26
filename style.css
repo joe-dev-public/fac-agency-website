@@ -200,9 +200,7 @@ ul {
 }
 /* this style is for test navigation, you can delete it */
 section {
-  /* border: 5px solid #000; */
-  height: 100vh;
-  /* max-width: 60rem; */
+  max-width: 60rem;
 }
 
 .member-container {
@@ -309,6 +307,9 @@ footer > div > p {
   position: absolute;
   z-index: -10;
 }
+.contact-container>img:nth-child(2){
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .contact-container{
     height: 100%;
@@ -316,7 +317,7 @@ footer > div > p {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    max-width: 30rem;
+    max-width: 20rem;
     margin: 0 auto;
   }
   .contact-container>div{
@@ -331,14 +332,12 @@ footer > div > p {
     margin: 0 1rem;
   }
   .contact-container > form {
-    width: 100%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
   }
   .contact-container > form > input,textarea {
-    width: 100%;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid var(--white-100);
@@ -359,5 +358,22 @@ footer > div > p {
     position: absolute;
     margin: 0 auto;
     z-index: -10;
+  }
+  .contact-container>img:first-child{
+    display: none;
+  }
+  .contact-container>img:nth-child(2){
+    display: flex;
+  }
+  footer {
+    min-height: 20rem;
+    background-color: #1d1c1e;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 30px;
   }
 }
