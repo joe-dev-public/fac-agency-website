@@ -419,6 +419,10 @@ footer > div > p {
   line-height: 1.5;
 }
 
+#about-us h2 {
+  font-size: 1.75rem;
+}
+
 #about-us-intro {
   text-align: center;
 }
@@ -463,6 +467,10 @@ footer > div > p {
   flex-wrap: wrap;
   /* Joe: do we need padding here to make sure the content never flows over the large border radius? */
   padding: 2rem 7.5rem;
+}
+
+#our-approach-container h2 {
+  text-align: center;
 }
 
 /* End of styles unique to "about us" section */
