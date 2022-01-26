@@ -462,6 +462,7 @@ footer > div > p {
   color: var(--white-100);
   flex-wrap: wrap;
   /* Joe: do we need padding here to make sure the content never flows over the large border radius? */
+  padding: 2rem 7.5rem;
 }
 
 /* End of styles unique to "about us" section */
