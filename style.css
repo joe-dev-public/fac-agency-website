@@ -240,14 +240,13 @@ footer > div > p {
   /* text-align: center; */
 }
 #contacts{
-  height: 60rem;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 6rem;
 }
 .contact-container{
-  height: 75%;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -303,14 +302,13 @@ footer > div > p {
 }
 @media screen and (max-width: 768px) {
   #contacts{
-    height: 60rem;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 6rem;
   }
   .contact-container{
-    height: 75%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
