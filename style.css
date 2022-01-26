@@ -261,3 +261,53 @@ footer > div > p {
   flex-wrap: wrap;
   /* text-align: center; */
 }
+.contact-container{
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 35rem;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.contact-container>div{
+  color: var(--white-100)
+}
+.contact-container>div>h2{
+  font-weight: 500;
+  font-size: 3rem;
+}
+.contact-container > form {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-container > form > input,textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--white-100);
+  padding-bottom: 10px;
+  margin-bottom: -1rem;
+}
+.contact-container> form > button {
+  margin-top: 1rem;
+  align-self: flex-end;
+  width: 10rem;
+  height: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+.contact-container > form ::placeholder{
+  color: var(--white-100);
+  opacity: 0.5;
+}
+.contact-container>img {
+  position: absolute;
+  z-index: -10;
+}
+
+
