@@ -19,8 +19,6 @@ body {
   min-width: 23.438rem;
   display: grid;
   grid-template-columns: 1fr minmax(20.4375rem, 69.375rem) 1fr;
-  /* added for now to work on footer tag */
-  grid-template-rows: 10fr 1fr;
 }
 
 main {
@@ -73,7 +71,6 @@ section {
 }
 
 footer {
-  grid-row: 2/3;
   grid-column: 1/4;
   background-color: #1d1c1e;
   height: 100%;
