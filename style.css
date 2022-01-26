@@ -473,4 +473,8 @@ footer > div > p {
   text-align: center;
 }
 
+#our-approach-list {
+  display: flex;
+  gap: 3rem;
+}
 /* End of styles unique to "about us" section */
