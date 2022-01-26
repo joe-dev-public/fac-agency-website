@@ -139,32 +139,39 @@
         <!-- end of member-container -->
       </section>
       <section id="contacts">
-        <span>Contact us</span>
-        <form action="">
-          <label for="name">Name: </label>
-          <br />
-          <input type="text" name="name" required />
-          <br />
-          <label for="email">Email: </label>
-          <br />
-          <input type="email" name="email" required />
-          <br />
-          <label for="company">Company name: </label>
-          <br />
-          <input type="text" name="company" required />
-          <br />
-          <label for="message">Message: </label>
-          <br />
-          <textarea
-            name="message"
-            id=""
-            cols="30"
-            rows="10"
-            required
-          ></textarea>
-          <br />
-          <button type="submit">Submit</button>
-        </form>
+        <div class="contact-container">
+          <img src="assets/contact-background.svg" alt="contact us form background image">
+          <img src="assets/mobile-contact-background.svg" alt="mobile contact us form background image">
+          <div>
+            <h2>Contact Us</h2>
+            <p>Ready to take it to the next level? Let’s talk about your project or idea and find out how we can help your business grow. If you are looking for unique digital experiences that’s relatable to your users, drop us a line.</p>
+          </div>
+          <form action="https://contact-form-submitted.netlify.app" method='GET'>
+            <label for="name"></label>
+            <input type="text" name="name" placeholder="Name " required />
+            <br />
+            <label for="email"></label>
+            <br />
+            <input type="email" name="email" placeholder="Email" required />
+            <br />
+            <label for="company"></label>
+            <br />
+            <input type="text" name="company" placeholder="Company" required />
+            <br />
+            <label for="message"></label>
+            <br />
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="5"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <br />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer>
