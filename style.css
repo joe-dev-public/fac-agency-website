@@ -396,7 +396,7 @@ footer > div > p {
   line-height: 1.5;
 }
 
-#about-us h2 {
+#about-us h2, #our-team h2 {
   font-size: 1.75rem;
 }
 
@@ -445,7 +445,7 @@ footer > div > p {
   padding: 2rem 7.5rem;
 }
 
-#our-approach-container h2 {
+#our-approach-container h2, #our-team h2 {
   text-align: center;
 }
 
