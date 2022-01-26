@@ -261,3 +261,75 @@ footer > div > p {
   flex-wrap: wrap;
   /* text-align: center; */
 }
+
+
+
+/* Layout primitives */
+
+/* Joe todo: refactor so that <sections> use this class? (60rem seems commonly used as the "default".) */
+.center {
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-width-small {
+  max-width: 30rem;
+}
+
+.stack > * + * {
+  margin-top: 2rem;
+}
+
+/* End of layout primitives */
+
+
+
+/* Shared styles used by "about us" section */
+
+.hero-button-red {
+  background: var(--red-500);
+  color: var(--white-100);
+}
+
+/* End of shared styles used by "about us" section */
+
+
+
+/* Styles unique to "about us" section */
+#about-us {
+  /* Joe todo: apply this to the whole document? */
+  line-height: 1.5;
+}
+
+#about-us-intro {
+  text-align: center;
+}
+
+#about-us-decoration {
+  display: flex;
+  gap: 5rem;
+}
+
+#about-us-decoration-panel-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#about-us-decoration q {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  /* text-align: center; */
+}
+
+/* Joe todo: refactor so that this bg col is a variable, styles are in class shared with "our team" stuff. */
+#our-approach-container {
+  background: #2d2e40;
+  border-radius: 1.5rem 7.5rem;
+  color: var(--white-100);
+  /* Joe: do we need padding here to make sure the content never flows over the large border radius? */
+}
+
+/* End of styles unique to "about us" section */
