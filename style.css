@@ -11,6 +11,9 @@
   --orange-500: #ff836d;
   --orange-600: #fe545d;
   --red-500: #ff0606;
+  --border-radius-small: 1.5rem; /* =~ 25px */
+  --border-radius-medium: 4.5rem; /* =~ 75px */
+  --border-radius-large: 7.5rem; /* =~ 125px */
 }
 
 body {
@@ -202,32 +205,10 @@ section {
   max-width: 60rem;
 }
 
-.member-container {
-  /* border: 5px solid #000; */
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  gap: 10px;
-}
-
-.member {
-  width: 167px;
-  height: 223px;
-  background: #2d2e40;
-  border-radius: 25px 75px;
-
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-}
-.member > span {
-  color: #fff;
-}
-
 footer {
   min-height: 20rem;
   grid-column: 1/4;
+  width: 100%;
   background-color: #1d1c1e;
   height: 100%;
   display: flex;
@@ -258,16 +239,25 @@ footer > div > p {
   flex-wrap: wrap;
   /* text-align: center; */
 }
-
+#contacts{
+  height: 60rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
 .contact-container{
-  height: 100%;
+  height: 75%;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   max-width: 35rem;
-  margin: 0 auto;
+  margin: 1rem auto;
   gap: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: url(assets/contact-us-shape.svg), var(--orange-600);
 }
 .contact-container>div{
   color: var(--white-100)
@@ -312,8 +302,15 @@ footer > div > p {
   display: none;
 }
 @media screen and (max-width: 768px) {
+  #contacts{
+    height: 60rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
   .contact-container{
-    height: 100%;
+    height: 75%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -422,7 +419,7 @@ footer > div > p {
   line-height: 1.5;
 }
 
-#about-us h2 {
+#about-us h2, #our-team h2 {
   font-size: 1.75rem;
 }
 
@@ -464,14 +461,14 @@ footer > div > p {
 
 /* Joe todo: refactor so that this bg col is a variable, styles are in class shared with "our team" stuff. */
 #our-approach-container {
-  background: #2d2e40;
-  border-radius: 1.5rem 7.5rem;
+  background: var(--blue-800);
+  border-radius: var(--border-radius-small) var(--border-radius-large);
   color: var(--white-100);
   /* Joe: do we need padding here to make sure the content never flows over the large border radius? */
   padding: 2rem 7.5rem;
 }
 
-#our-approach-container h2 {
+#our-approach-container h2, #our-team h2 {
   text-align: center;
 }
 
@@ -488,3 +485,32 @@ footer > div > p {
   /* width: 10rem; */
 }
 /* End of styles unique to "about us" section */
+
+
+/* Styles unique to "our team" section */
+
+.member-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.member {
+  align-items: center;
+  background: var(--blue-800);
+  border-radius: var(--border-radius-small) var(--border-radius-medium);
+  color: var(--white-100);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  min-height: 14rem;
+  min-width: 10rem;
+}
+
+.member b {
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+/* End of styles unique to "our team" section */
