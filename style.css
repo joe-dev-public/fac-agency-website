@@ -429,7 +429,7 @@ footer > div > p {
   gap: 5rem;
 }
 
-#about-us-decoration > div {
+#about-us-decoration-panel-1, #about-us-decoration-panel-2 {
   flex: 1;
 }
 
