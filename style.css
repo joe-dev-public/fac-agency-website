@@ -395,6 +395,9 @@ footer > div > p {
   margin-top: 2rem;
 }
 
+.stack-large > * + * {
+  margin-top: 6rem;
+}
 /* End of layout primitives */
 
 
