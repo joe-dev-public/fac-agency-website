@@ -228,6 +228,7 @@ section {
 footer {
   min-height: 20rem;
   grid-column: 1/4;
+  width: 100%;
   background-color: #1d1c1e;
   height: 100%;
   display: flex;
@@ -258,7 +259,9 @@ footer > div > p {
   flex-wrap: wrap;
   /* text-align: center; */
 }
-
+#contacts{
+  height: 60rem;
+}
 .contact-container{
   height: 100%;
   display: flex;
@@ -312,6 +315,9 @@ footer > div > p {
   display: none;
 }
 @media screen and (max-width: 768px) {
+  #contacts{
+    height: 60rem;
+  }
   .contact-container{
     height: 100%;
     display: flex;
