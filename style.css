@@ -464,7 +464,6 @@ footer > div > p {
   background: #2d2e40;
   border-radius: 1.5rem 7.5rem;
   color: var(--white-100);
-  flex-wrap: wrap;
   /* Joe: do we need padding here to make sure the content never flows over the large border radius? */
   padding: 2rem 7.5rem;
 }
@@ -475,6 +474,14 @@ footer > div > p {
 
 #our-approach-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 3rem;
+}
+
+#our-approach-list > div {
+  flex: 1;
+  /* max-width: 15rem; */
+  min-width: 10rem;
+  /* width: 10rem; */
 }
 /* End of styles unique to "about us" section */
