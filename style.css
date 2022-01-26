@@ -11,6 +11,9 @@
   --orange-500: #ff836d;
   --orange-600: #fe545d;
   --red-500: #ff0606;
+  --border-radius-small: 1.5rem; /* =~ 25px */
+  --border-radius-medium: 4.5rem; /* =~ 75px */
+  --border-radius-large: 7.5rem; /* =~ 125px */
 }
 
 body {
@@ -439,7 +442,7 @@ footer > div > p {
 /* Joe todo: refactor so that this bg col is a variable, styles are in class shared with "our team" stuff. */
 #our-approach-container {
   background: var(--blue-800);
-  border-radius: 1.5rem 7.5rem;
+  border-radius: var(--border-radius-small) var(--border-radius-large);
   color: var(--white-100);
   /* Joe: do we need padding here to make sure the content never flows over the large border radius? */
   padding: 2rem 7.5rem;
@@ -476,7 +479,7 @@ footer > div > p {
 .member {
   align-items: center;
   background: var(--blue-800);
-  border-radius: 25px 75px;
+  border-radius: var(--border-radius-small) var(--border-radius-medium);
   color: var(--white-100);
   display: flex;
   flex-flow: column wrap;
