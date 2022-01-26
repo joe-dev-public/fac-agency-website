@@ -208,6 +208,7 @@ section {
 footer {
   min-height: 20rem;
   grid-column: 1/4;
+  width: 100%;
   background-color: #1d1c1e;
   height: 100%;
   display: flex;
@@ -238,16 +239,25 @@ footer > div > p {
   flex-wrap: wrap;
   /* text-align: center; */
 }
-
+#contacts{
+  height: 60rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
 .contact-container{
-  height: 100%;
+  height: 75%;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   max-width: 35rem;
-  margin: 0 auto;
+  margin: 1rem auto;
   gap: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: url(assets/contact-us-shape.svg), var(--orange-600);
 }
 .contact-container>div{
   color: var(--white-100)
@@ -292,8 +302,15 @@ footer > div > p {
   display: none;
 }
 @media screen and (max-width: 768px) {
+  #contacts{
+    height: 60rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
   .contact-container{
-    height: 100%;
+    height: 75%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
