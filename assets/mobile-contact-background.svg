@@ -1,0 +1,25 @@
+<svg width="375" height="764" viewBox="0 0 375 764" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="375" height="764" fill="#E7816B"/>
+<mask id="mask0_2_360" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="375" height="764">
+<rect width="375" height="764" fill="white"/>
+</mask>
+<g mask="url(#mask0_2_360)">
+<circle opacity="0.308943" cx="346" cy="146.357" r="146" transform="rotate(-180 346 146.357)" fill="url(#paint0_linear_2_360)"/>
+<circle opacity="0.308943" cx="54" cy="146.357" r="146" transform="rotate(-90 54 146.357)" fill="url(#paint1_linear_2_360)"/>
+<circle opacity="0.308943" cx="346" cy="843.643" r="146" transform="rotate(-180 346 843.643)" fill="url(#paint2_angular_2_360)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_2_360" x1="200" y1="292.357" x2="492" y2="292.357" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5D0202" stop-opacity="0.01"/>
+<stop offset="1" stop-color="#5D0202" stop-opacity="0.497569"/>
+</linearGradient>
+<linearGradient id="paint1_linear_2_360" x1="-92" y1="292.357" x2="200" y2="292.357" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5D0202" stop-opacity="0.01"/>
+<stop offset="1" stop-color="#5D0202" stop-opacity="0.497569"/>
+</linearGradient>
+<radialGradient id="paint2_angular_2_360" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(346 843.643) scale(146)">
+<stop stop-color="#5D0202" stop-opacity="0.01"/>
+<stop offset="1" stop-color="#5D0202" stop-opacity="0.497569"/>
+</radialGradient>
+</defs>
+</svg>
