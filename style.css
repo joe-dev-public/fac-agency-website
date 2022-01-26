@@ -473,7 +473,7 @@ footer > div > p {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 2rem;
 }
 
 .member {
@@ -486,6 +486,11 @@ footer > div > p {
   justify-content: center;
   min-height: 14rem;
   min-width: 10rem;
+}
+
+.member b {
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
 }
 
 /* End of styles unique to "our team" section */
