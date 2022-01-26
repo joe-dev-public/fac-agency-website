@@ -213,7 +213,7 @@ section {
 .member {
   width: 167px;
   height: 223px;
-  background: #2d2e40;
+  background: var(--blue-800);
   border-radius: 25px 75px;
 
   display: flex;
@@ -461,7 +461,7 @@ footer > div > p {
 
 /* Joe todo: refactor so that this bg col is a variable, styles are in class shared with "our team" stuff. */
 #our-approach-container {
-  background: #2d2e40;
+  background: var(--blue-800);
   border-radius: 1.5rem 7.5rem;
   color: var(--white-100);
   /* Joe: do we need padding here to make sure the content never flows over the large border radius? */
