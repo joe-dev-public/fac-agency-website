@@ -202,29 +202,6 @@ section {
   max-width: 60rem;
 }
 
-.member-container {
-  /* border: 5px solid #000; */
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  gap: 10px;
-}
-
-.member {
-  width: 167px;
-  height: 223px;
-  background: var(--blue-800);
-  border-radius: 25px 75px;
-
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-}
-.member > span {
-  color: #fff;
-}
-
 footer {
   min-height: 20rem;
   grid-column: 1/4;
@@ -485,3 +462,27 @@ footer > div > p {
   /* width: 10rem; */
 }
 /* End of styles unique to "about us" section */
+
+
+/* Styles unique to "our team" section */
+
+.member-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.member {
+  width: 167px;
+  height: 223px;
+  background: var(--blue-800);
+  border-radius: 25px 75px;
+  color: var(--white-100);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End of styles unique to "our team" section */
