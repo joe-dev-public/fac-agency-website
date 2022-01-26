@@ -309,7 +309,6 @@ footer > div > p {
     margin-bottom: 6rem;
   }
   .contact-container{
-    height: 75%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
