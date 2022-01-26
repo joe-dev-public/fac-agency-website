@@ -474,15 +474,15 @@ footer > div > p {
 }
 
 .member {
-  width: 167px;
-  height: 223px;
+  align-items: center;
   background: var(--blue-800);
   border-radius: 25px 75px;
   color: var(--white-100);
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  align-items: center;
+  min-height: 14rem;
+  min-width: 10rem;
 }
 
 /* End of styles unique to "our team" section */
