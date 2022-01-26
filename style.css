@@ -238,11 +238,26 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  padding: 30px;
 }
-footer > span {
-  width: 690px;
-  height: 1px;
-  background: #ffffff;
-  mix-blend-mode: normal;
-  opacity: 0.1;
+
+footer > div > p {
+  color: var(--white-100);
+}
+
+.footer-logo-container {
+  max-width: 1110px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 1px var(--white-100);
+  padding: 30px;
+}
+.footer-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  /* text-align: center; */
 }
