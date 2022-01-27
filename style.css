@@ -415,7 +415,7 @@ textarea {
 #about-us-decoration {
   display: flex;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 2rem 5rem;
 }
 
 #about-us-decoration-panel-1,
