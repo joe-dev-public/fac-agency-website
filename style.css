@@ -374,6 +374,9 @@ footer > div > p {
     gap: 1rem;
     padding: 30px;
   }
+  #about-us-decoration-panel-1 img {
+    max-width: 80vw;
+  }
 }
 
 
