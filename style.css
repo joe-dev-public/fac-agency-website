@@ -239,14 +239,14 @@ footer > div > p {
   flex-wrap: wrap;
   /* text-align: center; */
 }
-#contacts{
+#contacts {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   margin-bottom: 6rem;
 }
-.contact-container{
+.contact-container {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -258,10 +258,10 @@ footer > div > p {
   border-radius: 1rem;
   background: url(assets/contact-us-shape.svg), var(--orange-600);
 }
-.contact-container>div{
-  color: var(--white-100)
+.contact-container > div {
+  color: var(--white-100);
 }
-.contact-container>div>h2{
+.contact-container > div > h2 {
   font-weight: 500;
   font-size: 3rem;
 }
@@ -272,15 +272,17 @@ footer > div > p {
   justify-content: space-around;
   align-items: center;
 }
-.contact-container > form > input,textarea {
+.contact-container > form > input,
+textarea {
   width: 100%;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid var(--white-100);
   padding-bottom: 10px;
-  margin-bottom: -1rem;
+  margin-bottom: 1rem;
+  color: var(--white-100);
 }
-.contact-container> form > button {
+.contact-container > form > button {
   margin-top: 1rem;
   align-self: flex-end;
   width: 10rem;
@@ -289,26 +291,26 @@ footer > div > p {
   border-radius: 0.5rem;
   cursor: pointer;
 }
-.contact-container > form ::placeholder{
+.contact-container > form::placeholder {
   color: var(--white-100);
   opacity: 0.5;
 }
-.contact-container>img {
+.contact-container > img {
   position: absolute;
   z-index: -10;
 }
-.contact-container>img:nth-child(2){
+.contact-container > img:nth-child(2) {
   display: none;
 }
 @media screen and (max-width: 768px) {
-  #contacts{
+  #contacts {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     margin-bottom: 6rem;
   }
-  .contact-container{
+  .contact-container {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -316,15 +318,15 @@ footer > div > p {
     max-width: 20rem;
     margin: 0 auto;
   }
-  .contact-container>div{
-    color: var(--white-100)
+  .contact-container > div {
+    color: var(--white-100);
   }
-  .contact-container>div>h2{
+  .contact-container > div > h2 {
     text-align: center;
     font-weight: 500;
     font-size: 3rem;
   }
-  .contact-container>div>p{
+  .contact-container > div > p {
     margin: 0 1rem;
   }
   .contact-container > form {
@@ -333,32 +335,33 @@ footer > div > p {
     justify-content: center;
     align-items: center;
   }
-  .contact-container > form > input,textarea {
+  .contact-container > form > input,
+  textarea {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid var(--white-100);
     padding-bottom: 10px;
   }
-  .contact-container> form > button {
+  .contact-container > form > button {
     align-self: center;
     width: 10rem;
     height: 3rem;
     border: none;
     border-radius: 0.5rem;
   }
-  .contact-container > form ::placeholder{
+  .contact-container > form ::placeholder {
     color: var(--white-100);
     opacity: 0.5;
   }
-  .contact-container>img {
+  .contact-container > img {
     position: absolute;
     margin: 0 auto;
     z-index: -10;
   }
-  .contact-container>img:first-child{
+  .contact-container > img:first-child {
     display: none;
   }
-  .contact-container>img:nth-child(2){
+  .contact-container > img:nth-child(2) {
     display: flex;
   }
   footer {
@@ -373,8 +376,6 @@ footer > div > p {
     padding: 30px;
   }
 }
-
-
 
 /* Layout primitives */
 
@@ -398,8 +399,6 @@ footer > div > p {
 }
 /* End of layout primitives */
 
-
-
 /* Shared styles used by "about us" section */
 
 .hero-button-red {
@@ -409,15 +408,14 @@ footer > div > p {
 
 /* End of shared styles used by "about us" section */
 
-
-
 /* Styles unique to "about us" section */
 #about-us {
   /* Joe todo: apply this to the whole document? */
   line-height: 1.5;
 }
 
-#about-us h2, #our-team h2 {
+#about-us h2,
+#our-team h2 {
   font-size: 1.75rem;
 }
 
@@ -431,7 +429,8 @@ footer > div > p {
   gap: 5rem;
 }
 
-#about-us-decoration-panel-1, #about-us-decoration-panel-2 {
+#about-us-decoration-panel-1,
+#about-us-decoration-panel-2 {
   flex: 1;
 }
 
@@ -466,7 +465,8 @@ footer > div > p {
   padding: 2rem 7.5rem;
 }
 
-#our-approach-container h2, #our-team h2 {
+#our-approach-container h2,
+#our-team h2 {
   text-align: center;
 }
 
@@ -483,7 +483,6 @@ footer > div > p {
   /* width: 10rem; */
 }
 /* End of styles unique to "about us" section */
-
 
 /* Styles unique to "our team" section */
 
@@ -512,3 +511,22 @@ footer > div > p {
 }
 
 /* End of styles unique to "our team" section */
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: var(--white-100);
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: var(--white-100);
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: var(--white-100);
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--white-100);
+}
