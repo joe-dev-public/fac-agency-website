@@ -1,7 +1,4 @@
 "use strict";
-function windowLoaded() {
-  console.log("Hello world.");
-}
 
 const aboutBtn = document.querySelector(".about-btn");
 const temBtn = document.querySelector(".team-btn");
