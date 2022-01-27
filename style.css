@@ -27,6 +27,8 @@ body {
 main {
   grid-column: 2/3;
   margin: 0 auto;
+  max-width: 100vw;
+  padding: 0 0.5rem;
 }
 
 /* header and nav bar code start */
