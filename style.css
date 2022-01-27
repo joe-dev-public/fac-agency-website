@@ -117,6 +117,9 @@ header {
     font-size: 1rem;
     font-weight: bold;
   }
+  #our-approach-container {
+    padding: 2rem 7.5rem;
+  }
 }
 
 .logo-container {
@@ -312,11 +315,12 @@ textarea {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    max-width: 20rem;
+    /* max-width: 20rem; */
     margin: 0 auto;
   }
   .contact-container > div {
     color: var(--white-100);
+    margin-bottom: 1.25rem;
   }
   .contact-container > div > h2 {
     text-align: center;
@@ -363,6 +367,10 @@ textarea {
   }
   #about-us-decoration-panel-1 img {
     max-width: 80vw;
+  }
+  #our-approach-container {
+    margin-top: 4rem;
+    padding: 2rem 5rem;
   }
 }
 
@@ -415,7 +423,7 @@ textarea {
 #about-us-decoration {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem 5rem;
+  gap: 2rem 3.5rem;
 }
 
 #about-us-decoration-panel-1,
@@ -451,7 +459,6 @@ textarea {
   border-radius: var(--border-radius-small) var(--border-radius-large);
   color: var(--white-100);
   /* Joe: do we need padding here to make sure the content never flows over the large border radius? */
-  padding: 2rem 7.5rem;
 }
 
 #our-approach-container h2,
